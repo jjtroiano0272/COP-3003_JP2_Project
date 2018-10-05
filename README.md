@@ -1,4 +1,4 @@
-# JP2_Project_2
+# JP2_Project
 
 TODO: Should have
 
