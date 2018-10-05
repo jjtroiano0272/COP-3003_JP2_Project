@@ -24,7 +24,7 @@ public class VehicleChassis implements Chassis {
 	default String value. // MALFORMED!
 	
 	setChassisName(String chassisName) {
-		this.chassisName = ; // this means were grabbing the one from the object; the class.
+		this.chassisName = chassisName; // this means were grabbing the one from the object; the class.
 	}
 
 	public void setChassisType(){}
@@ -36,14 +36,17 @@ public class VehicleChassis implements Chassis {
 	 * instance of the interface Chassis (hint that would be a copy of this class).
 	 */
 	public Chassis getChassisType() {
-		return this;// hardest part of the whole program.
+		return this;
 	}
 
 	/**
 	 * A public method setChassisType that takes a String parameter vehicleChassis and that returns
 	 * void. It should set the instance variable chassisName.
 	 * A public toString method that returns the following: Chassis Name        : Chassis
+	 *
+	 * Hardest part of the whole program.
 	 */
+	
 	public String soString(){ 
 		return "Chassis Name: Chassis";
 	}
@@ -58,4 +61,4 @@ public class VehicleChassis implements Chassis {
 	
 }
 
-// you can't run or makef an object when it's just an interface so you can't yetdo unit testing.
+// you can't run or make an object when it's just an interface so you can't yetdo unit testing.
