@@ -15,6 +15,7 @@ public interface Chassis {
 	 * The definition of a public getChassisType method that returns an instance of Chassis.
 	 */
 	Chassis getChassisType();
+	
 	void setChassisType(String vehicleChassis);
 	
 }

@@ -3,13 +3,10 @@ public class VehicleFrame implements Chassis {
 	// Static being a class variable; nonstatic being for only the object.
 	private String vehicleFrameType;
 	
-	/*
-	Want default const. so don't initialize ANY fields
-	Read instruction for rest here..
-	*/
-	
-	// This is the default constructor, with an instance variable.
-	public VehicleFrame(){String vehicleFrameType = "Unibody";}
+	/**
+	 * Default constructor with instance variable.
+	 */
+	public VehicleFrame(){this.vehicleFrameType = "Unibody";}
 	
 	/**
 	 * @param vehicleFrameType
@@ -17,34 +14,31 @@ public class VehicleFrame implements Chassis {
 	 * This is the overloaded constructor???
 	 * This is where the user passes vehicleFrameType and the private class variable gets set to
 	 * this arg.
-	*/
+	 */
 	public VehicleFrame(String vehicleFrameType){
-		// Don't think you'll need this one!
-		// this.vehicleFrameType = vehicleFrameType;
 		this.vehicleFrameType = vehicleFrameType;
 	}
 	
 	/**
-	 * Is supposed to return an instance of the interface...mais  commment how?
-	 * Returns instance of..interface??? Here this keyword refers to Chassis, the interface
-	 * implemented on this class
-	 *
+	 * Returns instance of the INTERFACE Chassis, even though this is called within a class.
  	 */
 	public Chassis getChassisType() {
 		return this;
 	}
 	
-	// ...Needed?
 	/**
-	 * A public method setChassisType that takes a String parameter vehicleFrameType and that
-	 * returns a void. It should set the instance variable vehicleFrameType.
-	 * this.vehicleFrameType sets the instance variable.
-	 *
 	 */
 	@Override
 	public void setChassisType(String vehicleFrameType){
 		this.vehicleFrameType = vehicleFrameType;
 	}
+	
+	@Override
+	public String toString() {
+		return "Chassis\t\t: "+chassis+
+				"Vehicle Frame\t\t: "+vehicleFrameType+"\n\n";
+	}
+
 }
 
 // Froms tep 4 create a vehicle frame with def constructor and.....
