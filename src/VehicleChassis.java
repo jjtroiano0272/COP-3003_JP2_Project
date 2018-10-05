@@ -13,21 +13,11 @@ public class VehicleChassis implements Chassis {
 	 * "Default" meaning the constructor that doesn't have any p[aramters.
 	 * Same name, differnet number of things
 	 * */
-	public VehicleChassis(String chassisName) {
-		this.chassisName = chassisName; // ???
-	}
+	// Public default constructor String chassisName gets the interface constant as its value.
+	public VehicleChassis(){this.chassisName = chassis;}
 	
-	/**
-	 *
-	 * Set the chassisName instance variable in both, use the interface constant as the
-	 */
-	default String value. // MALFORMED!
-	
-	setChassisName(String chassisName) {
-		this.chassisName = chassisName; // this means were grabbing the one from the object; the class.
-	}
-
-	public void setChassisType(){}
+	// Overloaded constructor where you pass in String chassisName
+	public VehicleChassis(String chassisName) { this.chassisName = chassisName; }
 	
 	/**
 	 *
@@ -38,25 +28,24 @@ public class VehicleChassis implements Chassis {
 	public Chassis getChassisType() {
 		return this;
 	}
-
+	
 	/**
 	 * A public method setChassisType that takes a String parameter vehicleChassis and that returns
 	 * void. It should set the instance variable chassisName.
-	 * A public toString method that returns the following: Chassis Name        : Chassis
+	 */
+	public void setChassisType(String chassisName) {
+		this.chassisName = chassisName;
+	}
+
+
+	/**
+	 * A public toString method that returns the following:
+	 *  Chassis Name  : Chassis
 	 *
 	 * Hardest part of the whole program.
 	 */
-	
-	public String soString(){ 
+	public String toString(){
 		return "Chassis Name: Chassis";
-	}
-	
-	public getChassisType(){return this;}
-	
-	// Abstract method.
-	// Doesn't belong in public interface Chassis.
-	public void setChassisType(String vehicleChassis){
-		this.chassis = vehicleChassis;
 	}
 	
 }
