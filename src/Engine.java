@@ -1,12 +1,12 @@
 public interface Engine {
 
-	public void setEngineCylinders(int engineCylinders);
-	public void setEngineManufacturedDate(Date date);
-	public void setEngineManufacturer(String manufacturer);
-	public void setEngineMake(String engineMake);
-	public void setEngineModel(String engineModel);
-	public void setDriveTrain(String driveTrain);
-	public void setEngineType(String fuel);
+	void setEngineCylinders(int engineCylinders);
+	void setEngineManufacturedDate(java.util.Date date);
+	void setEngineManufacturer(String manufacturer);
+	void setEngineMake(String engineMake);
+	void setEngineModel(String engineModel);
+	void setDriveTrain(String driveTrain);
+	void setEngineType(String fuel);
 
 }
 

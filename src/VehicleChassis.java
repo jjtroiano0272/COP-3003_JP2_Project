@@ -48,6 +48,14 @@ public class VehicleChassis implements Chassis {
 		return "Chassis Name: Chassis";
 	}
 	
+	public getChassisType(){return this;}
+	
+	// Abstract method.
+	// Doesn't belong in public interface Chassis.
+	public void setChassisType(String vehicleChassis){
+		this.chassis = vehicleChassis;
+	}
+	
 }
 
 // you can't run or makef an object when it's just an interface so you can't yetdo unit testing.

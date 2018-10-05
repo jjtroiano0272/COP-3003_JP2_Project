@@ -9,9 +9,7 @@ public class VehicleFrame implements Chassis {
 	*/
 	
 	// This is the default constructor, with an instance variable.
-	public VehicleFrame(){
-		String vehicleFrameType = "Unibody";
-	}
+	public VehicleFrame(){String vehicleFrameType = "Unibody";}
 	
 	/**
 	 * @param vehicleFrameType
