@@ -59,6 +59,7 @@ public class VehicleFrame implements Chassis {
 		
 		Vehicle Frame   : 'Ladder Frame'
 		 */
+		
 	}
 
 }

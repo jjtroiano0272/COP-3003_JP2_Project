@@ -56,8 +56,7 @@ public class ManufacturedEngine {
 						"Engine Model\t\t: "+       engineModel+
 						"Engine Type\t\t: "+        engineType+
 						"Engine Cylinders\t\t: "+   engineCylinders+
-						"Drive Train\t\t: "+        driveTrain;
+						"Drive Train\t\t: "+        driveTrain; // Potential error
 	}
-	
 	
 }
