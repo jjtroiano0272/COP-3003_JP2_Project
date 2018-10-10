@@ -21,12 +21,19 @@ public class VehicleFrame implements Chassis {
 	
 	/**
 	 * Returns instance of the INTERFACE Chassis, even though this is called within a class.
+	 *
+	 * A public method named getChassisType that didn't have a formal parameter and that returns an
+	 * instance of the interface Chassis (hint that would be a copy of this class).
  	 */
 	public Chassis getChassisType() {
 		return this;
 	}
 	
 	/**
+	 * A public method setChassisType that takes a String parameter vehicleFrameType
+	 * and that returns a void. It should set the instance variable vehicleFrameType.
+	 *
+	 * Don't know if Override is necessary here...or the structure of why....
 	 */
 	@Override
 	public void setChassisType(String vehicleFrameType){
@@ -37,6 +44,21 @@ public class VehicleFrame implements Chassis {
 	public String toString() {
 		return "Chassis\t\t: "+chassis+
 				"Vehicle Frame\t\t: "+vehicleFrameType+"\n\n";
+	}
+	
+	/**
+	 * This is that 'static main method' that tests two scenarios...I don't know if it belongs here
+	 * or if it should be defined in the main.
+	 */
+	public static printFuelGradeValues() {
+		return "Chassis\t\t: "+chassis+
+				"Vehicle Frame\t\t: "+this.vehicleFrameType+"\n\n";
+		
+		/*
+		This should be:
+		
+		Vehicle Frame   : 'Ladder Frame'
+		 */
 	}
 
 }

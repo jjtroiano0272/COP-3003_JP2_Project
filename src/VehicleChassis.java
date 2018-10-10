@@ -1,3 +1,5 @@
+import java.util.regex.MatchResult;
+
 public class VehicleChassis implements Chassis {
 	
 	/**
@@ -48,6 +50,20 @@ public class VehicleChassis implements Chassis {
 		return "Chassis Name: Chassis";
 	}
 	
+	
+	/*Write a static main method that creates two objects, one with the default constructor and the other with the
+	constructor with parameters.  Give sample
+	data for the parameters.*/
+	public static createTwoObjects() {
+		// Default shit
+		VehicleChassis(){ this.chassisName = chassis; }
+		
+		// Overloaded...do not know how the fuck to reference these from the above vehicleChassis
+		// constructors.
+		VehicleChassis(String chassisName) { this.chassisName = chassisName; }
+		
+		
+	}
 }
 
-// you can't run or make an object when it's just an interface so you can't yetdo unit testing.
+// you can't run or make an object when it's just an interface so you can't yet   do unit testing.

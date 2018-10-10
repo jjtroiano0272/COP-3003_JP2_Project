@@ -11,14 +11,22 @@ import java.util.Date;
 
 public class ManufacturedEngine {
 	
-	public String     engineManufacturer;
-	public Date       engineManufacturedDate;
-	public String     engineMake;
-	public String     engineModel;
-	public int        engineCylinders;
-	public String     engineType;
-	public String     driveTrain;
-
+	private String     engineManufacturer;
+	private Date       engineManufacturedDate;
+	private String     engineMake;
+	private String     engineModel;
+	private int        engineCylinders;
+	private String     engineType;
+	private String     driveTrain;
+	
+	/**
+	 * The public default constructor.
+	 */
+	public ManufacturedEngine() {
+	//	Initializes with Generic literals.
+	//	How the fuck do you work with generic literals??? The fuck.
+	}
+	
 	// How the hell is this supposed to be structured???
 	ManufacturedEngine<T>{
 		/*
@@ -44,11 +52,11 @@ public class ManufacturedEngine {
 	public String toString() {
 		return  "Engine Manufacturer\t\t: "+engineManufacturer+
 						"Engine Manufactured\t\t: "+engineManufacturedDate+
-						"Engine Make\t\t: "+engineMake+
-						"Engine Model\t\t: "+engineModel+
-						"Engine Type\t\t: "+engineType+
-						"Engine Cylinders\t\t: "+engineCylinders+
-						"Drive Train\t\t: "+driveTrain;
+						"Engine Make\t\t: "+        engineMake+
+						"Engine Model\t\t: "+       engineModel+
+						"Engine Type\t\t: "+        engineType+
+						"Engine Cylinders\t\t: "+   engineCylinders+
+						"Drive Train\t\t: "+        driveTrain;
 	}
 	
 	
