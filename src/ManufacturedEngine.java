@@ -9,7 +9,7 @@
 
 import java.util.Date;
 
-public class ManufacturedEngine {
+public class ManufacturedEngine implements Engine {
 	
 	private String     engineManufacturer;
 	private Date       engineManufacturedDate;
@@ -20,32 +20,46 @@ public class ManufacturedEngine {
 	private String     driveTrain;
 	
 	/**
-	 * The public default constructor.
+	 * Making sure to implement methods FROM Engine to avoid errors here. Methods MUST be 're-defined'.
 	 */
-	public ManufacturedEngine() {
-	//	Initializes with Generic literals.
-	//	How the fuck do you work with generic literals??? The fuck.
+	public void setEngineManufacturer(String manufacturer) {
+		this.engineManufacturer = manufacturer;
+	}
+	public void setEngineManufacturedDate(Date date) {
+		this.engineManufacturedDate = date;
+	}
+	public void setEngineMake(String engineMake) {
+		this.engineMake = engineMake;
+	}
+	public void setEngineModel(String engineModel) {
+		this.engineModel = engineModel;
+	}
+	public void setEngineCylinders(int engineCylinders) {
+		this.engineCylinders = engineCylinders;
+	}
+	public void setEngineType(String fuel) {
+		this.engineType = fuel;
+	}
+	public void setDriveTrain(String driveTrain) {
+		this.driveTrain = driveTrain;
 	}
 	
-	// How the hell is this supposed to be structured???
-	ManufacturedEngine<T>{
-		/*
-		EXAMPLE:
-		public class Box<T> {
-			// T stands for "Type"
-			private T t;
-			
-			public void set(T t) { this.t = t; }
-			public T get() { return t; }
-		}
-		*/
-		this.engineManufacturer = T;
-		this.engineManufacturedDate = T;
-		this.engineMake = T;
-		this.engineModel = T;
-		this.engineCylinders = T;
-		this.engineType = T;
-		this.driveTrain = T;
+	
+	/**
+	 * THIS MUST BE STRING LITERAL 'GENERIC'
+	 * We're just initializing all fields here with dummy values.
+	 *
+	 * Public default constructor.
+	 */
+	
+	public ManufacturedEngine() {
+		this.engineManufacturer = "Generic";
+		this.engineManufacturedDate = new Date();
+		this.engineMake = "Generic";
+		this.engineModel = "Generic";
+		this.engineCylinders = 0;
+		this.engineType = "Generic";
+		this.driveTrain = "Generic";
 	}
 	
 	@Override

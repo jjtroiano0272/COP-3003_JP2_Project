@@ -47,21 +47,25 @@ public class VehicleFrame implements Chassis {
 	}
 	
 	/**
-	 * This is that 'static main method' that tests two scenarios...I don't know if it belongs here
-	 * or if it should be defined in the main.
+	 * Write a static main method that tests two scenarios:
+	 * 1. One that prints all fuel grade values, like:
+	 * 2. One that
+	 *  prints a value set by a single string value.
 	 */
-	public static printFuelGradeValues() {
-		return "Chassis\t\t: "+chassis+
-				"Vehicle Frame\t\t: "+this.vehicleFrameType+"\n\n";
-		
-		/*
-		This should be:
-		
-		Vehicle Frame   : 'Ladder Frame'
-		 */
-		
+	
+	/**
+	 * Testing default constructor.
+	 * Moved this method from, previously, inside of VehicleFrame but NOT inside a main method therein.
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		VehicleFrame vehicleFrameObj = new VehicleFrame();
+		System.out.println(vehicleFrameObj);
 	}
-
+	
+	}
+	
+	
 }
 
 // Froms tep 4 create a vehicle frame with def constructor and.....
