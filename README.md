@@ -1,8 +1,12 @@
 # JP2_Project
 
-TODO: Should have
+TODO: 
+   *Use alot of generate
+   
 
-use alot of generate
+==========DOCUMENTATION
+A live UML class diagram for this project can be found at https://www.lucidchart.com.
+
 
 USAGE
 CREDITS
