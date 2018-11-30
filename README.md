@@ -1,7 +1,10 @@
 # JP2_Project
 
 TODO: 
-   *Use alot of generate
+    * JavaDocs
+    * No bugs
+    * CheckStyle
+    * Use a lot of generate
    
 
 ==========DOCUMENTATION
